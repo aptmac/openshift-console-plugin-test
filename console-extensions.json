@@ -44,7 +44,7 @@
     "properties": {
       "exact": true,
       "path": "/rules",
-      "component": { "$codeRef": "RulesPage" }
+      "component": { "$codeRef": "AutomatedRulesPage" }
     }
   },
   {

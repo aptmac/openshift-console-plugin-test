@@ -1,8 +1,14 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet';
 
 export const DashboardPage = () => {
   return (
-    <iframe src="http://localhost:9091" style = {{height: "100%"}}/>
+    <>
+      <Helmet>
+        <title data-test="dashboard-page-title">Cryostat | Dashboard</title>
+      </Helmet>
+      <iframe src="http://localhost:9091/dashboard" style={{ height: '100%' }} />
+    </>
   );
 };
 

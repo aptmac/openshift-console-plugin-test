@@ -8,13 +8,200 @@
     }
   },
   {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/about",
+      "component": { "$codeRef": "AboutPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/settings",
+      "component": { "$codeRef": "SettingsPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/dashboard",
+      "component": { "$codeRef": "DashboardPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/topology",
+      "component": { "$codeRef": "TopologyPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/rules",
+      "component": { "$codeRef": "RulesPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/recordings",
+      "component": { "$codeRef": "RecordingsPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/archives",
+      "component": { "$codeRef": "ArchivesPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/events",
+      "component": { "$codeRef": "EventsPage" }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/security",
+      "component": { "$codeRef": "SecurityPage" }
+    }
+  },
+  {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "cryostat-section",
+      "insertAfter": "home",
+      "perspective": "admin",
+      "name": "%plugin__console-plugin-template~Cryostat%"
+    }
+  },
+  {
     "type": "console.navigation/href",
     "properties": {
       "id": "example",
       "name": "%plugin__console-plugin-template~Plugin Example%",
       "href": "/example",
       "perspective": "admin",
-      "section": "home"
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/separator",
+    "properties": {
+      "id": "pf-separator",
+      "section": "cryostat-section",
+      "insertAfter": "%plugin__console-plugin-template~Plugin Example%"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "about",
+      "name": "%plugin__console-plugin-template~About%",
+      "href": "/about",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "settings",
+      "name": "%plugin__console-plugin-template~Settings%",
+      "href": "/settings",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "dashboard",
+      "name": "%plugin__console-plugin-template~Dashboard%",
+      "href": "/dashboard",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "topology",
+      "name": "%plugin__console-plugin-template~Topology%",
+      "href": "/topology",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/separator",
+    "properties": {
+      "id": "pf-separator",
+      "section": "cryostat-section",
+      "insertAfter": "topology"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "rules",
+      "name": "%plugin__console-plugin-template~Automated Rules%",
+      "href": "/rules",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "recordings",
+      "name": "%plugin__console-plugin-template~Recordings%",
+      "href": "/recordings",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "archives",
+      "name": "%plugin__console-plugin-template~Archives%",
+      "href": "/archives",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "events",
+      "name": "%plugin__console-plugin-template~Events%",
+      "href": "/events",
+      "perspective": "admin",
+      "section": "cryostat-section"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "security",
+      "name": "%plugin__console-plugin-template~Security%",
+      "href": "/security",
+      "perspective": "admin",
+      "section": "cryostat-section"
     }
   }
 ]

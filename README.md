@@ -2,9 +2,9 @@
 ```bash
 $ export PLUGIN_NAME=cryostat-plugin
 $ ./build.bash
-$ podman manifest push quay.io/andrewazores/openshift-console-plugin-test:latest
+$ podman manifest push quay.io/almacdon/openshift-console-plugin-test:latest
 $ helm upgrade -i $PLUGIN_NAME charts/openshift-console-plugin -n plugin--${PLUGIN_NAME,,} --create-namespace
-$ helm uninstall $PLUGIN_NAME
+$ helm uninstall ${PLUGIN_NAME} -n plugin--${PLUGIN_NAME}
 ```
 
 ## Development using local backend (Cryostat or Prism):

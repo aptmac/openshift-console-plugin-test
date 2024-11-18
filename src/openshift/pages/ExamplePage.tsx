@@ -92,6 +92,8 @@ export default function ExamplePage() {
       localStorage.setItem(LOCALSTORAGE_KEY, selector);
       setSelector(selector);
       setDropdownOpen(false);
+      // update the cr server-side
+      services.api.sendCR(cr?.metadata?.namespace, cr.metadata?.name);
     },
     [setSelector, setDropdownOpen],
   );

@@ -3,6 +3,25 @@ import { catchError, concatMap } from 'rxjs/operators';
 import { consoleFetch } from '@openshift-console/dynamic-plugin-sdk';
 
 export class ApiService {
+  sendCR(ns: string | undefined, name: string | undefined): void {
+    const url = this.proxyUrl('cr-select');
+    if (!ns) {
+      ns = '';
+    }
+    if (!name) {
+      name = '';
+    }
+    from(
+      consoleFetch(url.toString(), {
+        redirect: 'follow',
+        headers: {
+          'CRYOSTAT-CR-NS': ns,
+          'CRYOSTAT-CR-NAME': name,
+        },
+      }),
+    );
+  }
+
   status(): Observable<string> {
     const url = this.proxyUrl('health');
     return from(

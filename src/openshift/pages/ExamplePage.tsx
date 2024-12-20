@@ -1,7 +1,6 @@
 import React from 'react';
 import './example.css';
 import Helmet from 'react-helmet';
-import { useTranslation } from 'react-i18next';
 import {
   Button,
   MenuToggle,
@@ -30,7 +29,7 @@ const ALL_NS = '#ALL_NS#';
 const LOCALSTORAGE_KEY = 'cryostat-plugin';
 
 export default function ExamplePage() {
-  const { t } = useTranslation('plugin__console-plugin-template');
+  const { t } = useTranslation('plugin__cryostat-plugin');
   const services = React.useContext(ServiceContext);
   const [subs] = React.useState([] as Subscription[]);
 
@@ -204,3 +203,7 @@ export default function ExamplePage() {
     </>
   );
 }
+function useTranslation(arg0: string): { t: any; } {
+  throw new Error('Function not implemented.');
+}
+

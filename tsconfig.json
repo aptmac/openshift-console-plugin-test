@@ -25,7 +25,8 @@
       "@test/*": ["src/cryostat-web/src/test/*"],
       "@i18n/*": ["src/cryostat-web/src/i18n/*"],
       "@assets/*": ["node_modules/@patternfly/react-core/dist/styles/assets/*"],
-      "react": [ "./node_modules/@types/react" ]
+      "react": [ "./node_modules/@types/react" ],
+      "i18n": ["src/openshift/i18n.ts"],
     },
     "skipLibCheck": true,
   },

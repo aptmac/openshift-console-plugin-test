@@ -5,3 +5,5 @@
 .devcontainer/dev.env
 integration-tests/videos
 integration-tests/screenshots
+
+locales/en/plugin__cryostat-plugin.json
